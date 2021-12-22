@@ -1,0 +1,11 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-test",
+      "appliesTo": "SweetyChart/ChartCode/Sweety/public/charting_library/test.html",
+      "type": "launch"
+    }
+
+  ]
+}
