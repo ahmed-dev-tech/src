@@ -16,6 +16,7 @@
 
 </head>
 <body>
+    <script src="test.js"></script>
     <!--*******************
         Preloader start
     ********************-->
@@ -104,9 +105,9 @@
                     </div>
                     
                     <div class="col-xl-6">
-                        <div class="card text-white bg-secondary">
-                            <input id="token-name-address-input" 
-                                   tabindex="0" type="text" value="Enter Token Name/Address Contract" 
+                        <div class="card text-white">
+                            <input id="token-name-address-input"
+                                   tabindex="0" type="text" placeholder="Search...." 
                                    style="box-sizing: content-box; background: 0px center; border: 0px; 
                                           font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
                         </div>
@@ -114,8 +115,21 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-body">
-                        
+                    <div id="card-body">
+                        <table id="myTable" class="table table-bordered" style="margin-top: 90px" >
+                            <thead>
+                              <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">name</th>
+                                <th scope="col">price</th>
+                                <th scope="col">Market Cap</th>
+                                <th scope="col">Market Cap 24h</th>
+                                <th scope="col">7 day chart</th>
+                            </tr>
+                            </thead>
+                            <tbody id="data">
+                            </tbody>
+                          </table>
                     </div>
                 </div>
             </div>
@@ -126,8 +140,8 @@
             </div>
         </div>
     </div>
-   
-  
+    
+    <script src="fetch.js"></script>
     <!--**********************************
         Scripts
     ***********************************-->
